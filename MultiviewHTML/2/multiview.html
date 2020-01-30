@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>
+			MULTIVIEW
+		</title>
+		<script>
+			function refreshOne() {
+    				var ifr = document.getElementsByName('minhaJanela1')[0];
+    				ifr.src = ifr.src;
+			}
+			function refreshTwo() {
+    				var ifr = document.getElementsByName('minhaJanela2')[0];
+    				ifr.src = ifr.src;
+			}
+			function refreshThree() {
+    				var ifr = document.getElementsByName('minhaJanela3')[0];
+    				ifr.src = ifr.src;
+			}
+			function refreshFour() {
+    				var ifr = document.getElementsByName('minhaJanela4')[0];
+    				ifr.src = ifr.src;
+			}
+
+		
+		</script>
+	</head>
+	<body bgcolor=black text=white>
+		<table border width=100% height=100%>
+			<tr>
+				<td width=50% align=center>
+					<iframe name="minhaJanela1" style="zoom:100%" height="540" width="960" src="https://video.rnp.br/portal/embed-channel?idItem=57936&autostart=true" class="assista-player" id="assista-player" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" scrolling="no"></iframe>
+					<button onclick="refreshOne();">Refresh</button>
+				</td>
+				<td width=50% align=center>
+					<iframe name="minhaJanela2" style="zoom:100%" height="540" width="960" src="https://video.rnp.br:443/portal/embed-channel?idItem=57952&autostart=true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+					<button onclick="refreshTwo();">Refresh</button>
+				</td>
+			</tr>
+			<tr>
+				<td width=50% align=center>
+					<iframe name="minhaJanela3" style="zoom:100%" height="540" width="960" class="embed-responsive-item featured-video" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/Axddo22hCoY?autoplay=1&amp;rel=0&amp;enablejsapi=1&amp;fs=1" scrolling="no"></iframe>
+					<button onclick="refreshThree();">Refresh</button>
+				</td>
+				<td align=center>
+					<iframe name="minhaJanela4" width="960" height="540" src="https://www2.camara.leg.br/camaranoticias/tv/embedAoVivo.html" frameborder="0" scrolling="no" allowfullscreen></iframe>
+					<button onclick="refreshFour();">Refresh</button>
+				</td>
+			</tr>
+		<table>			
+	</body>
+</html>
